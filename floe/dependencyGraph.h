@@ -3,32 +3,43 @@
 #include<vector>
 
 
-union OpArg {
-	char* ref;
-	int constInt;
-};
 typedef enum ArgType {
 	ARG_NODE_REF,
 	ARG_CONST_INT
 } ArgType;
-typedef int (*Operation)(int*, int);
-typedef struct OperationTree {
-	std::vector<OperationArg*> arguments;
-	Operation op;
-	OperationTree* then;
-} OperationTree;
-typedef struct OperationArg {
-	OpArg argValue;
-	ArgType argType;
-} OperationArg;
+typedef int (*Op)(int*, int);
 
+
+typedef struct Dependency {
+	ArgType fufill;
+	DependencyArg arg;
+} Dependency;
+
+typedef struct Operation {
+	Op op;
+
+	/*
+		What needs fufilling
+	*/
+	std::vector<DependencyArg> deps;
+	std::vector<ArgType> depTypes;
+} Operation;
+union DependencyArg {
+	Operation* ref;
+	int constant;
+};
+
+
+typedef struct NodeOperation {
+	Operation op;
+	NodeOperation** dependencies;
+	int depc;
+} NodeOperation;
 typedef struct DependencyGraph {
-	char* name;
+	char* node;
 	std::vector<DependencyGraph*> dependsOn;
-	OperationTree* operation;
+	std::vector<DependencyGraph*> dependents;
 } DependencyGraph;
 
-OperationTree* newOperationTree();
 DependencyGraph* newNode(char* name);
-
 void destroyGraph(DependencyGraph* dg);

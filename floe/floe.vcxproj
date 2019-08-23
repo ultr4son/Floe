@@ -152,15 +152,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="dependencyGraph.cpp" />
     <ClCompile Include="floe.cpp" />
     <ClCompile Include="mpc-master\mpc.c" />
-    <ClCompile Include="operation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="dependencyGraph.h" />
     <ClInclude Include="mpc-master\mpc.h" />
-    <ClInclude Include="operation.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
