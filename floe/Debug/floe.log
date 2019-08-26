@@ -1,20 +1,3 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (floe.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  floe.cpp
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C3646:  'arg': unknown override specifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,14): error C2065:  'DependencyArg': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,7): error C2923:  'std::vector': 'DependencyArg' is not a valid template type argument for parameter '_Ty'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(334,37): error C3203:  'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,13): error C2143:  syntax error: missing ';' before '*'
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,13): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,40): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,40): error C2059:  syntax error: '{'
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,40): error C2143:  syntax error: missing ';' before '{'
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(47,40): error C2447:  '{': missing function header (old-style formal list?)
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(64,2): error C2065:  'OperationTree': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(64,17): error C2065:  'op': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(66,3): error C2065:  'op': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(66,8): error C3861:  'newOperationTree': identifier not found
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(67,3): error C2065:  'op': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(68,3): error C2065:  'op': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\floe.cpp(79,46): error C2061:  syntax error: identifier 'OperationTree'
+  floe.c
+  floe.vcxproj -> C:\Users\trthomps\source\repos\floe\Debug\floe-parser.exe

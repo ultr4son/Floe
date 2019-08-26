@@ -1,5 +1,3 @@
-﻿  dependencyGraph.c
-  operation.c
-  Generating Code...
-C:\Users\trthomps\source\repos\floe\Common\dependencyGraph.c(5,9): warning C4013:  'memset' undefined; assuming extern returning int
-  Common.vcxproj -> C:\Users\trthomps\source\repos\floe\Debug\Common.dll
+﻿  operation.c
+C:\Users\trthomps\source\repos\floe\Common\operation.c(31): warning C4716:  'opCompose': must return a value
+  Common.vcxproj -> C:\Users\trthomps\source\repos\floe\Debug\Common.lib

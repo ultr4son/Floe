@@ -126,8 +126,13 @@
     <ClInclude Include="exec.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="exec.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="exec.c" />
+    <ClCompile Include="main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{2df87689-d42a-41c9-ac26-99b1170a4858}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

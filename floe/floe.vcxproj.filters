@@ -15,10 +15,10 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="floe.cpp">
+    <ClCompile Include="mpc-master\mpc.c">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mpc-master\mpc.c">
+    <ClCompile Include="floe.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

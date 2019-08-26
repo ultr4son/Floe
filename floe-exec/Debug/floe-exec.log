@@ -1,41 +1,4 @@
-﻿  exec.cpp
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C3646:  'arg': unknown override specifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,14): error C2065:  'DependencyArg': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,7): error C2923:  'std::vector': 'DependencyArg' is not a valid template type argument for parameter '_Ty'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(334,37): error C3203:  'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(5,2): error C3861:  'fufill': identifier not found
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(10,5): error C2039:  'depc': is not a member of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(18): message :  see declaration of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(10,25): error C3861:  'constantDependencies': identifier not found
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(13,35): error C2440:  'type cast': cannot convert from 'std::vector' to 'int *'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(13,19): message :  No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(13,47): error C2039:  'depc': is not a member of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(18): message :  see declaration of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(13,47): error C2198:  'Op': too few arguments for call
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(17,32): error C2039:  'depc': is not a member of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(18): message :  see declaration of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(19,16): error C2678:  binary '[': no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(1471,27): message :  could be 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) const'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(1461,21): message :  or       '_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type)'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(19,16): message :  while trying to match the argument list '(std::vector, int)'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(19,48): error C2678:  binary '[': no operator found which takes a left-hand operand of type 'std::vector' (or there is no acceptable conversion)
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(1471,27): message :  could be 'const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) const'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(1461,21): message :  or       '_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type)'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(19,48): message :  while trying to match the argument list '(std::vector, int)'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(22,34): error C2440:  'type cast': cannot convert from 'std::vector' to 'int *'
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(22,18): message :  No user-defined-conversion operator available that can perform this conversion, or the operator cannot be called
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(22,46): error C2039:  'depc': is not a member of 'Operation'
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(18): message :  see declaration of 'Operation'
-  main.cpp
-C:\Users\trthomps\source\repos\floe\floe-exec\exec.cpp(22,46): error C2198:  'Op': too few arguments for call
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C3646:  'arg': unknown override specifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(15,19): error C4430:  missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,14): error C2065:  'DependencyArg': undeclared identifier
-C:\Users\trthomps\source\repos\floe\floe\dependencyGraph.h(24,7): error C2923:  'std::vector': 'DependencyArg' is not a valid template type argument for parameter '_Ty'
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(334,37): error C3203:  'allocator': unspecialized class template can't be used as a template argument for template parameter '_Alloc', expected a real type
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.22.27905\include\vector(367,1): error C2057:  expected constant expression
-C:\Users\trthomps\source\repos\floe\floe-exec\main.cpp(10,8): error C2663:  'std::vector<_Ty,_Alloc>::push_back': 2 overloads have no legal conversion for 'this' pointer
-C:\Users\trthomps\source\repos\floe\floe-exec\main.cpp(19,8): error C2663:  'std::vector<_Ty,_Alloc>::push_back': 2 overloads have no legal conversion for 'this' pointer
+﻿  exec.c
+  main.c
   Generating Code...
-C:\Users\trthomps\source\repos\floe\floe-exec\main.cpp(21,8): error C2663:  'std::vector<_Ty,_Alloc>::push_back': 2 overloads have no legal conversion for 'this' pointer
+  floe-exec.vcxproj -> C:\Users\trthomps\source\repos\floe\Debug\floe-exec.exe
