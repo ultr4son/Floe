@@ -10,7 +10,7 @@ int opPrint(int* argv, int argc);
 struct Operation* newOperation(int maxDeps, char* name);
 void addDependency(struct Operation* op, struct Operation* dep);
 void addConstant(struct Operation* op, int constant);
-
+void deleteOperation(struct Operation* operation);
 typedef int (*Op)(int*, int);
 
 
@@ -25,7 +25,7 @@ typedef struct Operation {
 	/*
 		What needs fufilling
 	*/
-	union DependencyArg* deps;
+	union DependencyArg* dependencies;
 	enum ArgType* depTypes;
 	int depc;
 

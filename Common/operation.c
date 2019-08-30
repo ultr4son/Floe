@@ -31,18 +31,25 @@ Op opCompose(Op op1, Op op2) {
 }
 
 struct Operation* newOperation(int maxDeps, char* name) {
-	Operation* op = (Operation*)malloc(sizeof(Operation));
-	if (op != NULL) {
-		op->deps = calloc(maxDeps, sizeof(DependencyArg));
-		op->depTypes = calloc(maxDeps, sizeof(ArgType));
-		op->depc = 0;
-		op->name = name;
+	struct Operation* operation = (struct Operation*)malloc(sizeof(struct Operation));
+	if (operation != NULL) {
+		operation->dependencies = calloc(maxDeps, sizeof(DependencyArg));
+		operation->depTypes = calloc(maxDeps, sizeof(ArgType));
+		operation->depc = 0;
+		operation->name = name;
 	}
-	return op;
+	return operation;
 }
 
+void deleteOperation(struct Operation* operation) {
+	free(operation->dependencies);
+	free(operation->depTypes);
+	free(operation);
+}
+
+
 void add(struct Operation* op, enum ArgType type, union DependencyArg arg) {
-	op->deps[op->depc] = arg;
+	op->dependencies[op->depc] = arg;
 	op->depTypes[op->depc] = type;
 	++op->depc;
 }

@@ -154,13 +154,20 @@
   <ItemGroup>
     <ClCompile Include="floe.c" />
     <ClCompile Include="mpc-master\mpc.c" />
+    <ClCompile Include="parser.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="mpc-master\mpc.h" />
+    <ClInclude Include="parser.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="floe.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.vcxproj">
+      <Project>{2df87689-d42a-41c9-ac26-99b1170a4858}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

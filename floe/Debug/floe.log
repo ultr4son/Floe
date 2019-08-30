@@ -1,3 +1,13 @@
 ﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(452,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (floe.vcxproj).  This can lead to incorrect clean and rebuild behavior.
-  floe.c
+  parser.c
+C:\Users\trthomps\source\repos\floe\floe\parser.c(5,30): warning C4047:  'initializing': 'const int' differs in levels of indirection from 'char [13]'
+C:\Users\trthomps\source\repos\floe\floe\parser.c(6,25): warning C4047:  'initializing': 'const int' differs in levels of indirection from 'char [5]'
+C:\Users\trthomps\source\repos\floe\floe\parser.c(9,1): warning C4028:  formal parameter 1 different from declaration
+C:\Users\trthomps\source\repos\floe\floe\parser.c(70,26): warning C4047:  'function': 'const char *' differs in levels of indirection from 'const int'
+C:\Users\trthomps\source\repos\floe\floe\parser.c(70,26): warning C4024:  'strcmp': different types for formal and actual parameter 2
+C:\Users\trthomps\source\repos\floe\floe\parser.c(75,34): warning C4047:  'function': 'const char *' differs in levels of indirection from 'const int'
+C:\Users\trthomps\source\repos\floe\floe\parser.c(75,34): warning C4024:  'strcmp': different types for formal and actual parameter 2
+C:\Users\trthomps\source\repos\floe\floe\parser.c(76,54): warning C4020:  'newOperation': too many actual parameters
+C:\Users\trthomps\source\repos\floe\floe\parser.c(131,26): warning C4133:  'function': incompatible types - from 'Operation *' to 'mpc_ast_t *'
+C:\Users\trthomps\source\repos\floe\floe\parser.c(131,38): warning C4020:  'astToDependencies': too many actual parameters
   floe.vcxproj -> C:\Users\trthomps\source\repos\floe\Debug\floe-parser.exe
